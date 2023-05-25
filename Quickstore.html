@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Quickstore.css">
+    <title>Classwork 1</title>
+</head>
+
+<body>
+    <div class="d-flex header justify-content-center div align-items-center">
+        <h1 class="p-3">Quick Store</h1>
+    </div><br>
+    <div class="d-flex justify-content-center">
+        <input type="text" id="input" class="me-3" placeholder="Item">
+        <input type="text" id="input1" class="me-3" placeholder="Quantity">
+        <input type="text" id="input2" class="me-3" placeholder="Price">
+        <button class="btn bg-primary p-2" onclick="add()">ADD</button>
+    </div><br><br>
+    <div class="d-flex justify-content-center">
+        <table id="table">
+        </table>
+    </div><br><br>
+    <div class="d-flex justify-content-center align-items-center div-column">
+        <section class="mb-4">
+            <button class="btn bg-primary p-2" onclick="showAmount()">Total Amount</button>
+            <input class="p-2" type="text" id="input3" class="ms-2">
+        </section>
+        <button class="btn bg-danger p-3 ms-5" onclick="reset()">RESET</button>
+    </div>
+</body>
+
+</html>
+<script src="./Quickstore.js"></script>
